@@ -1,0 +1,298 @@
+/* -----------------------------------------
+ GLOBAL
+----------------------------------------- */
+html,
+body {
+	min-height: 100%;
+}
+
+body {
+	height: 100%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background-color: #EEEEEE;
+	color: #303030;
+}
+
+/* -----------------------------------------
+ CONTAINER
+----------------------------------------- */
+.container {
+	margin: 27px auto 0;
+	padding: 21px 0 0;
+	width: 615px;
+	height: 615px;
+	background-color: #DEC8AE;
+}
+
+/* -----------------------------------------
+ CHESS
+----------------------------------------- */
+.chess {
+	position: relative;
+	margin: auto;
+	width: 578px;
+	height: 578px;
+	border: 1px solid #000;
+	font-size: 0;
+}
+
+.number-area {
+	position: absolute;
+	top: 26px;
+	left: -11px;
+	border: 0;
+	font-size: 16px;
+	width: 10px;
+	color: #000;
+}
+
+.number-area p {
+	height: 72px;
+}
+
+
+.letter-area {
+	font-size: 16px;
+	position: absolute;
+	top: -20px;
+	left: 31px;
+	border: 0;
+}
+
+.letter-area span {
+	display: inline-block;
+	width: 36px;
+	margin-right: 32px;
+
+}
+
+.letter-area span:last-child {
+	margin-right: 0;
+}
+
+/* -----------------------------------------
+ CELL POSITION
+----------------------------------------- */
+.checker,
+.cell {
+	position: absolute;
+}
+.cell {
+	width: 72px;
+	height: 72px;
+}
+.cell--left-b {
+	left: 72px;
+}
+.cell--left-c {
+	left: 144px;
+}
+
+.cell--left-d {
+	left: 216px;
+}
+
+.cell--left-e {
+	left: 288px;
+}
+
+.cell--left-f {
+	left: 360px;
+}
+
+.cell--left-g {
+	left: 432px;
+}
+
+.cell--left-h {
+	left: 504px;
+}
+
+.cell--a8 {
+	left: 0;
+}
+.top-0 {
+	top: 0;
+}
+.top-72 {
+	top: 72px;
+}
+.top-144 {
+	top: 144px;
+}
+.top-216 {
+	top: 216px;
+}
+.top-288 {
+	top: 288px;
+}
+.top-360 {
+	top: 360px;
+}
+.top-432{
+	top: 432px;
+}
+.top-504 {
+	top: 504px;
+}
+
+/* -----------------------------------------
+ CELL COLOR
+----------------------------------------- */
+.cell--color-a:nth-child(odd),
+.cell--color-c:nth-child(odd),
+.cell--color-e:nth-child(odd),
+.cell--color-g:nth-child(odd) {
+	background-color: #fff;
+}
+.cell--color-a:nth-child(even),
+.cell--color-c:nth-child(even),
+.cell--color-e:nth-child(even),
+.cell--color-g:nth-child(even) {
+	background-color: #000;
+}
+
+.cell--color-b:nth-child(even),
+.cell--color-d:nth-child(even),
+.cell--color-f:nth-child(even),
+.cell--color-h:nth-child(even) {
+	background-color: #fff;
+}
+.cell--color-b:nth-child(odd),
+.cell--color-d:nth-child(odd),
+.cell--color-f:nth-child(odd),
+.cell--color-h:nth-child(odd) {
+	background-color: #000;
+}
+
+/* -----------------------------------------
+ CHECKERS
+----------------------------------------- */
+.black,
+.white {
+	width: 55px;
+	height: 55px;
+	border: 2px solid #999;
+	border-radius: 50%;
+}
+
+.black {
+	background-color: black;
+	-webkit-box-shadow: 0 0 0 1px white;
+	box-shadow: 0 0 0 1px white;
+}
+
+.white {
+	background-color: #B9292B;
+	-webkit-box-shadow: 0 0 0 1px #ccc;
+	box-shadow: 0 0 0 1px #ccc;
+}
+
+/* -----------------------------------------
+ ODD ROWS
+----------------------------------------- */
+.a1,
+.a3,
+.a7 {
+	left: 8px;
+}
+.c1,
+.c3,
+.c7 {
+	left: 152px;
+}
+.e1,
+.e3,
+.e7 {
+	right: 224px;
+}
+.g1,
+.g3,
+.g7 {
+	right: 80px;
+}
+
+/* -----------------------------------------
+ EVEN ROWS
+----------------------------------------- */
+.b2,
+.b6,
+.b8 {
+	left: 80px;
+}
+.d2,
+.d6,
+.d8 {
+	left: 224px;
+}
+.f2,
+.f6,
+.f8 {
+	right: 153px;
+}
+.h2,
+.h6,
+.h8 {
+	right: 8px;
+}
+
+/* -----------------------------------------
+ ROW-1
+----------------------------------------- */
+.a1,
+.c1,
+.e1,
+.g1 {
+	bottom: 8px;
+}
+
+/* -----------------------------------------
+ ROW-2
+----------------------------------------- */
+.b2,
+.d2,
+.f2,
+.h2 {
+	bottom: 82px;
+}
+
+/* -----------------------------------------
+ ROW-3
+----------------------------------------- */
+.a3,
+.c3,
+.e3,
+.g3 {
+	bottom: 155px;
+}
+
+/* -----------------------------------------
+ ROW-6
+----------------------------------------- */
+.b6,
+.d6,
+.f6,
+.h6 {
+	top: 151px;
+}
+
+/* -----------------------------------------
+ ROW-7
+----------------------------------------- */
+.a7,
+.c7,
+.e7,
+.g7 {
+	top: 80px;
+}
+
+/* -----------------------------------------
+ ROW-8
+----------------------------------------- */
+.b8,
+.d8,
+.f8,
+.h8 {
+	top: 8px;
+}

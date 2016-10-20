@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chessboard</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css">
+    <!-- For IE9 and later -->
+    <!--[if lte IE 9]>
+   		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    <!-- For IE10 and more -->
+    <![if IE]><![endif]>
+</head>
+
+<body>
+    <!-- BEGIN container  -->
+    <div class="container">
+        <!-- BEGIN chess  -->
+        <div class="chess">
+        	<div class="number-area">
+        		<p>8</p>
+				<p>7</p>
+				<p>6</p>
+				<p>5</p>
+				<p>4</p>
+				<p>3</p>
+				<p>2</p>
+				<p>1</p>
+        	</div>
+        	<div class="letter-area">
+        		<span>a</span>
+        		<span>b</span>
+        		<span>c</span>
+        		<span>d</span>
+        		<span>e</span>
+        		<span>f</span>
+        		<span>g</span>
+        		<span>h</span>
+        	</div>
+            <div class="cell cell--a8 cell--color-a top-0"></div>
+            <div class="cell cell--a7 cell--color-a top-72"></div>
+            <div class="cell cell--a6 cell--color-a top-144"></div>
+            <div class="cell cell--a5 cell--color-a top-216"></div>
+            <div class="cell cell--a4 cell--color-a top-288"></div>
+            <div class="cell cell--a3 cell--color-a top-360"></div>
+            <div class="cell cell--a2 cell--color-a top-432"></div>
+            <div class="cell cell--a1 cell--color-a top-504"></div>
+
+            <div class="cell cell--b8 cell--color-b cell--left-b top-0"></div>
+            <div class="cell cell--b7 cell--color-b cell--left-b top-72"></div>
+            <div class="cell cell--b6 cell--color-b cell--left-b top-144"></div>
+            <div class="cell cell--b5 cell--color-b cell--left-b top-216"></div>
+            <div class="cell cell--b4 cell--color-b cell--left-b top-288"></div>
+            <div class="cell cell--b3 cell--color-b cell--left-b top-360"></div>
+            <div class="cell cell--b2 cell--color-b cell--left-b top-432"></div>
+            <div class="cell cell--b1 cell--color-b cell--left-b top-504"></div>
+
+            <div class="cell cell--c8 cell--color-c cell--left-c top-0"></div>
+            <div class="cell cell--c7 cell--color-c cell--left-c top-72"></div>
+            <div class="cell cell--c6 cell--color-c cell--left-c top-144"></div>
+            <div class="cell cell--c5 cell--color-c cell--left-c top-216"></div>
+            <div class="cell cell--c4 cell--color-c cell--left-c top-288"></div>
+            <div class="cell cell--c3 cell--color-c cell--left-c top-360"></div>
+            <div class="cell cell--c2 cell--color-c cell--left-c top-432"></div>
+            <div class="cell cell--c1 cell--color-c cell--left-c top-504"></div>
+
+            <div class="cell cell--d8 cell--color-d cell--left-d top-0"></div>
+            <div class="cell cell--d7 cell--color-d cell--left-d top-72"></div>
+            <div class="cell cell--d6 cell--color-d cell--left-d top-144"></div>
+            <div class="cell cell--d5 cell--color-d cell--left-d top-216"></div>
+            <div class="cell cell--d4 cell--color-d cell--left-d top-288"></div>
+            <div class="cell cell--d3 cell--color-d cell--left-d top-360"></div>
+            <div class="cell cell--d2 cell--color-d cell--left-d top-432"></div>
+            <div class="cell cell--d1 cell--color-d cell--left-d top-504"></div>
+
+            <div class="cell cell--e8 cell--color-e cell--left-e top-0"></div>
+            <div class="cell cell--e7 cell--color-e cell--left-e top-72"></div>
+            <div class="cell cell--e6 cell--color-e cell--left-e top-144"></div>
+            <div class="cell cell--e5 cell--color-e cell--left-e top-216"></div>
+            <div class="cell cell--e4 cell--color-e cell--left-e top-288"></div>
+            <div class="cell cell--e3 cell--color-e cell--left-e top-360"></div>
+            <div class="cell cell--e2 cell--color-e cell--left-e top-432"></div>
+            <div class="cell cell--e1 cell--color-e cell--left-e top-504"></div>
+
+            <div class="cell cell--f8 cell--color-f cell--left-f top-0"></div>
+            <div class="cell cell--f7 cell--color-f cell--left-f top-72"></div>
+            <div class="cell cell--f6 cell--color-f cell--left-f top-144"></div>
+            <div class="cell cell--f5 cell--color-f cell--left-f top-216"></div>
+            <div class="cell cell--f4 cell--color-f cell--left-f top-288"></div>
+            <div class="cell cell--f3 cell--color-f cell--left-f top-360"></div>
+            <div class="cell cell--f2 cell--color-f cell--left-f top-432"></div>
+            <div class="cell cell--f1 cell--color-f cell--left-f top-504"></div>
+
+            <div class="cell cell--g8 cell--color-g cell--left-g top-0"></div>
+            <div class="cell cell--g7 cell--color-g cell--left-g top-72"></div>
+            <div class="cell cell--g6 cell--color-g cell--left-g top-144"></div>
+            <div class="cell cell--g5 cell--color-g cell--left-g top-216"></div>
+            <div class="cell cell--g4 cell--color-g cell--left-g top-288"></div>
+            <div class="cell cell--g3 cell--color-g cell--left-g top-360"></div>
+            <div class="cell cell--g2 cell--color-g cell--left-g top-432"></div>
+            <div class="cell cell--g1 cell--color-g cell--left-g top-504"></div>
+
+            <div class="cell cell--h8 cell--color-h cell--left-h top-0"></div>
+            <div class="cell cell--h7 cell--color-h cell--left-h top-72"></div>
+            <div class="cell cell--h6 cell--color-h cell--left-h top-144"></div>
+            <div class="cell cell--h5 cell--color-h cell--left-h top-216"></div>
+            <div class="cell cell--h4 cell--color-h cell--left-h top-288"></div>
+            <div class="cell cell--h3 cell--color-h cell--left-h top-360"></div>
+            <div class="cell cell--h2 cell--color-h cell--left-h top-432"></div>
+            <div class="cell cell--h1 cell--color-h cell--left-h top-504"></div>
+
+            <i class="checker black b8"></i>
+            <i class="checker black d8"></i>
+            <i class="checker black f8"></i>
+            <i class="checker black h8"></i>
+            <i class="checker black a7"></i>
+            <i class="checker black c7"></i>
+            <i class="checker black e7"></i>
+            <i class="checker black g7"></i>
+            <i class="checker black b6"></i>
+            <i class="checker black d6"></i>
+            <i class="checker black f6"></i>
+            <i class="checker black h6"></i>
+            <i class="checker white a1"></i>
+            <i class="checker white c1"></i>
+            <i class="checker white e1"></i>
+            <i class="checker white g1"></i>
+            <i class="checker white b2"></i>
+            <i class="checker white d2"></i>
+            <i class="checker white f2"></i>
+            <i class="checker white h2"></i>
+            <i class="checker white a3"></i>
+            <i class="checker white c3"></i>
+            <i class="checker white e3"></i>
+            <i class="checker white g3"></i>
+        </div>
+        <!-- END chess -->
+    </div>
+    <!-- END container -->
+</body>
+
+</html>
